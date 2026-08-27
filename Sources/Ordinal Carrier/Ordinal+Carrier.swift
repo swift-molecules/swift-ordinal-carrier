@@ -1,7 +1,8 @@
 public import Carrier
 public import Ordinal
 
-extension Ordinal: Carrier.`Protocol` {
+/// Makes an ordinal its own carried representation.
+extension Ordinal: @retroactive Carrier.`Protocol` {
 
     public typealias Underlying = Ordinal
 

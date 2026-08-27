@@ -18,7 +18,7 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/swift-molecules/swift-ordinal.git",
+            url: "https://github.com/swift-atoms/swift-ordinal.git",
             branch: "main"
         ),
         .package(
@@ -38,6 +38,7 @@ let package = Package(
             name: "Ordinal Carrier Tests",
             dependencies: [
                 "Ordinal Carrier",
+                .product(name: "Carrier", package: "swift-carrier"),
                 .product(name: "Ordinal", package: "swift-ordinal"),
             ]
         ),
