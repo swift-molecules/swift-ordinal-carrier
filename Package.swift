@@ -18,11 +18,11 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/swift-atoms/swift-ordinal.git",
+            url: "https://github.com/swift-atoms/swift-ordinal",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-atoms/swift-carrier.git",
+            url: "https://github.com/swift-atoms/swift-carrier",
             branch: "main"
         ),
     ],
